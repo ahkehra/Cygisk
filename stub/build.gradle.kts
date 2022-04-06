@@ -12,10 +12,10 @@ android {
     val canary = !Config.version.contains(".")
 
     val url = if (canary) null
-    else "https://github.com/TheHitMan7/Magisk-Files/raw/master/channel/app-release.apk"
+    else "https://github.com/Cygisk/Cygisk-Files/raw/master/channel/app-release.apk"
 
     defaultConfig {
-        applicationId = "com.thehitman7.magisk"
+        applicationId = "com.thehitman7.cygisk"
         versionCode = 1
         versionName = "1.0"
         buildConfigField("int", "STUB_VERSION", Config.stubVersion)
