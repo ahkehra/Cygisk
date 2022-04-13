@@ -75,6 +75,9 @@ mkdir -p $MAGISKBIN 2>/dev/null
 cp -af $BINDIR/. $COMMONDIR/. $BBBIN $MAGISKBIN
 chmod -R 755 $MAGISKBIN
 
+# Handle MagiskHide after Zygisk
+cp -af $MAGISKBIN/magiskhide.sh $SERVICED/magiskhide.sh
+
 # addon.d
 if [ -d /system/addon.d ]; then
   ui_print "- Adding addon.d survival script"

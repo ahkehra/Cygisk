@@ -124,7 +124,7 @@ fun Project.setupApp() {
         into("src/main/assets")
         from(rootProject.file("scripts")) {
             include("util_functions.sh", "boot_patch.sh", "addon.d.sh")
-            include("uninstaller.sh", "module_installer.sh")
+            include("uninstaller.sh", "module_installer.sh", "magiskhide.sh")
         }
         from(rootProject.file("tools/bootctl"))
         into("chromeos") {
