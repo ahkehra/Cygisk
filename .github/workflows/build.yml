@@ -1,4 +1,4 @@
-name: Magisk Build
+name: Custom Magisk Build
 
 on:
   push:
@@ -87,5 +87,5 @@ jobs:
         if: runner.os == 'Linux'
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ github.sha }}
+          name: Cygisk-${{ github.sha }}
           path: out
